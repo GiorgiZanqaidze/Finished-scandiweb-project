@@ -1,0 +1,111 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .btns-wrapper {
+  display: flex;
+  gap: 5em;
+}
+@media (max-width: 500px) {
+  .navigation .btns-wrapper {
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .btns-wrapper button {
+    width: 15em;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .btns-wrapper a {
+    width: 12em;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .navigation h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.form-container {
+  padding: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+@media (max-width: 500px) {
+  .form-container {
+    align-items: center;
+  }
+  .form-container .item-container, .form-container .item-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+  }
+}
+.form-container input, .form-container select {
+  width: 15em;
+  font-size: 1rem;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+@media (max-width: 500px) {
+  .form-container input, .form-container select {
+    width: 15em;
+    margin-left: 0em;
+    margin-top: 0em;
+  }
+}
+.form-container select {
+  background-color: white;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
+
+ul {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  gap: 2em;
+}
+@media (max-width: 700px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+ul li {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 0.1em;
+}
+ul li .delete-checkbox {
+  align-self: flex-start;
+  width: 1.4em;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 500px) {
+  ul li .delete-checkbox {
+    width: 2.5em;
+  }
+}/*# sourceMappingURL=index.css.map */
